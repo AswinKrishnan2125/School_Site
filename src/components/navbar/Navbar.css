@@ -1,0 +1,49 @@
+.navbar {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+  
+  .logo {
+    z-index: 30;
+  }
+  
+  .links {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .links {
+      position: static;
+      background-color: transparent;
+    }
+  
+    .logo {
+      position: static;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1E3A8A; /* Tailwind's blue-900 */
+      z-index: 30;
+    }
+  
+    .links {
+      position: absolute;
+      top: 60px; /* Adjust to the height of your navbar */
+      left: 0;
+      width: 100%;
+      background-color: #1E3A8A; /* Tailwind's blue-900 */
+      z-index: 20;
+    }
+  
+    .md\:hidden.absolute.right-4.top-4 {
+      z-index: 40;
+    }
+  }
+  

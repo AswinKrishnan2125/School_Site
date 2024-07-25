@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .container {
+      margin-top: 2rem; /* Adjust as needed to reduce the gap */
+    }
+  }
+  
+.about-data{
+  background-color: #a5f3fc;
+}
+.principal{
+  margin-top: 1rem;
+  background-color: #d9f99d;
+}
+.about-data, .facility-item {
+  transition: transform 0.3s;
+}
+
+.about-data:hover, .facility-item:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

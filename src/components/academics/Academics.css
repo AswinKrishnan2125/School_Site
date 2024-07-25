@@ -1,0 +1,11 @@
+@media (max-width: 400px) {
+  .academics{
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 798px) {
+  .academics{
+    margin-top: 2rem;
+  }
+}

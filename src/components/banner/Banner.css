@@ -1,0 +1,74 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust height as needed */
+}
+
+.banner-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  /* background-color: aqua; */
+}
+
+.banner-image {
+  width: 100%; /* Make images take full width */
+  height: 100%; /* Adjust height as needed */
+  object-fit: cover; /* Ensure the image covers the container */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); Add a subtle shadow */
+}
+
+.banner-content {
+  position: absolute;
+  height: 300px;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent background */
+  z-index: 1; /* Ensure content is above the image */
+}
+.desc h2{
+    font-size: 1.5rem;
+}
+@media (min-width: 640px) {
+    .desc {
+      width: 80%; /* Wider on medium screens */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .desc h2{
+        position: relative;
+      width: 100%; /* Even wider on larger screens */
+      font-size: 0.7rem;
+      height: 5rem;
+      display: none;
+
+    }
+    .banner-slide{
+      /* height: 40vh; */
+      margin-top: 0rem;
+      ;
+    }
+    .banner{
+      height: 40vh;
+    }
+   
+  }
+  
+  
+  .banner-content h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .banner-content p {
+    font-size: 1rem;
+  }
+  
